@@ -9,10 +9,10 @@
 
 
 ## About
-This website was created to help people prepare for interviews in an IT company<br>
-It is proposed to recreate the process of **a real interview** between two candidates - one of whom will be an interviewer and conduct the interview, and the other will pass it
-
-There are two functions on the site:
+This website was created to help people prepare for interviews in IT companies<br>
+It is proposed to recreate the process of **a real interview** between two candidates - one of them will be an interviewer and will conduct the interview, and the other will be passing it it
+<br><br>
+The website features two main functions:
 1. Register the interviewer for a specific date and time to conduct an interview at that time
 2. For the interviewee, find a suitable interviewer based on required programming language and desired date
 ## Demonstration
@@ -38,11 +38,12 @@ Then you need to initialize DataBase on your PC<br>
 So:
 1. Create database.db in main directory
 2. Run following:
-   ```shell
-   flask db init
-   flask db migrate -m "initial migration"
-   flask db upgrade
-   ```
+   
+```shell
+flask db init
+flask db migrate -m "initial migration"
+flask db upgrade
+ ```
 And finally <br>
 ```shell
 make run
@@ -58,18 +59,11 @@ And enjoy `localhost:8000`
       <img src="https://i.ibb.co/dGhpMFR/image.png" alt = "Interviewer page" width="900">
 </p>
 
-
-<p align="center">
-      <img src="https://i.ibb.co/fY8320M/image.png" alt = "Interview scheduled" width="900">
-</p>
-
 <p align="center">
       <img src="https://i.ibb.co/y5xpKQj/image.png" alt = "Interviewee page" width="900">
 </p>
 
 <p align="center">
-      <img src="https://i.ibb.co/vsKNx3Z/image.png" alt = "Create page" width="900">
+      <img src="https://i.ibb.co/fY8320M/image.png" alt = "Interview scheduled" width="900">
 </p>
-
-
 
