@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+
+{% block title %}interviewee{% endblock title %}
+
+{% block content %}
+
+<div class="wrapper_interviewee">
+
+    <div class="interviewee_text">
+        <h1>Find interviewer</h1>
+        <form action="/interviewee" method="POST">
+            <span class="under_text">Date</span><br>
+            <input type="date" name="date_interviewee"><br><br>
+            <span class="under_text">Programming language</span><br>
+            <input type="text" name="language_interviewee">
+            <button type="submit" class="button">Find</button>
+        </form>
+
+    </div>
+
+    <div class="list">
+        <form action="/record" method="POST">
+
+            <table>
+                <thead>
+                    <tr>
+                        {% for title in table_head %}
+                        
+                        <td>{{ title }}</td>
+    
+                        {% endfor %}
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in table_content %}
+                    <tr>
+                        {% for element in row['arr'] %}
+                            {% if element == 'radio_field' %}
+                                <td class="radio_cont"> <input type="radio" class="radio" name="radio" value={{ row['id'] }}> </td>
+                            {% else %}
+                                <td>{{ element }}</td>
+                            {% endif %}
+                        {% endfor %}
+                    </tr>  
+                    {% endfor %}
+                     
+    
+                </tbody>
+                
+            
+                
+            </table>
+            <br>
+            {% if table_head %}
+                <button type="submit" class="button">Send</button>
+            {% endif %}
+        </form>
+        
+
+
+    </div>
+
+</div>
+
+
+{% endblock content %}

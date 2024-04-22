@@ -1,0 +1,168 @@
+body{
+    margin: 0;
+}
+
+.wrapper{
+
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 24px;
+    background-color: #d1d0d0;
+}
+
+ul.nav{
+    margin-left: 0px;
+    padding-left: 0px;
+
+    margin-top: 0px;
+    list-style: none;
+}
+.nav li { 
+    display: inline; 
+    
+}
+ul.nav a {
+    display: inline-block;
+    width: 10em;
+    height: 2em;
+    padding: 20px;
+    padding-top: 30px;
+    background-color: #d1d0d0;
+
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+}
+ul.nav a:hover{
+    background-color: #333;
+    color: #d1d0d0;
+}
+.container{
+    margin-top: 3em;
+    margin-left: 2em;
+    font-family: monospace;
+    font-weight: bold;
+    color: #333;
+   
+    font-size: 24px;
+
+}
+
+.interview_form{
+    margin-top: 3em;
+    margin-left: 1em;
+    font-family: monospace;
+    color: #333;
+}
+input{
+    background-color: #d1d0d0;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    height: 40px;
+    width: 300px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.text_form{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.under_text{
+    margin-left: 6px;
+    font-weight: bold;
+    color: #333;
+    font-family: monospace;
+    font-size: 18px;
+    
+}
+
+.button{
+    font-weight: bold;
+    margin-top: 0;
+    margin-left: 10px;
+    outline: none;
+    border: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 3px;
+    background-color: #d1d0d0;
+    transition: 0.2s;
+    font-size: 18px;
+}
+
+.button:hover {
+    transform: scale(1.15); 
+}
+
+.wrapper_interviewee{
+    display: flex;
+}
+
+.interviewee_text{
+    width: auto;
+    margin-left: 30px;
+    color:#333;
+    font-size: 18px;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.list{
+    margin-left: 7%;
+    margin-top: 6.5%;
+    width: 60%;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+    color: #333;
+}
+
+table{
+    width: 95%;
+
+    
+}
+
+th, td {
+    border: 2px solid #333;
+    border-radius: 4px;
+    
+    padding: 8px; 
+    text-align: left; 
+}
+
+th {
+    background-color: #d1d0d0; 
+}
+
+
+input[type="radio"] {
+    
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    border: 2px solid #d1d0d0;
+    outline: none;
+}
+
+/* Стили для выбранной радиокнопки */
+input[type="radio"]:checked {
+    background-color: #333;
+    border-color: #333;
+}
+
+.radio_cont{
+    display: flex;
+    justify-content: center;
+}
+
+.p_telegram{
+    color:red;
+}

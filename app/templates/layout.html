@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}{% endblock title %}
+    </title>
+
+    <link rel="stylesheet" href="/static/styles/main.css">
+    
+</head>
+<body>
+    <div class="wrapper">
+        <ul class="nav">
+            <li><a href="/">Main page</a></li>
+            <li><a href="/interviewer">For interviewer</a></li>
+            <li><a href="/interviewee">For interviewee</a></li>
+        </ul>
+    </div>
+    
+    {% block content %}{% endblock content %}
+    
+
+</body>
+</html>

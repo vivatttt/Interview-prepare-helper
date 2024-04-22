@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %}interviewer{% endblock title %}
+
+
+
+{% block content %}
+
+    
+
+    <div class="interview_form">
+        <p class="text_form">Fill in the information</p>
+        <form action="/submit" method="POST">
+            <span class="under_text">Your name</span><br>
+            <input type="text" id="name" name="name" placeholder="Ivan"> <br><br>
+            
+            <span class="under_text">Your telegram</span><br>
+
+            <input type="text" name="telegram" id="telegram" placeholder="@ivanov2002"> <br><br>
+
+            <span class="under_text">Date of meeting</span><br>
+            <input type="date" name="date" id="date"> <br><br>
+            <span class="under_text">The hour meeting starts</span><br>
+            <input type="text" name="hour" id="hour" placeholder="11am">
+            <br><br>
+            <span class="under_text">Programming languages</span><br>
+            <input type="text" name="languages" id="languages" placeholder="Python, Java">
+            <button type="submit" class="button">Send</button>
+
+        </form>
+    </div>
+
+{% endblock content %}

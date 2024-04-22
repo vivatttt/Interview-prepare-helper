@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}sucess{% endblock title %}
+
+{% block content %}
+<div class="container">
+    <h1>Interview succesfully selected</h1>
+    <h2>Your interviewer is {{ interviewer.name }} 
+    <br>Contact them on telegram : <span class="p_telegram">{{ interviewer.telegram }}</span>
+    
+    <br><br>
+    Your interview is scheduled for <u>{{ interview.date }}</u>, starting at <u>{{ interview.hour  }}</u>
+    </h2>
+</div>
+
+{% endblock content %}
